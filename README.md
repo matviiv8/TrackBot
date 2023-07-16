@@ -24,7 +24,7 @@ TrackBot is designed to track walking activities and perform calculations on the
 
 ## Screenshots
 
-![1](https://github.com/matviiv8/Library/assets/73823120/978068d6-a02c-434c-a6b4-1e519d60b5a1)
+![1](https://github.com/matviiv8/TrackBot/assets/73823120/133d6ff8-50f5-42c2-95ae-a9fa4f730fcc)
 ![2](https://github.com/matviiv8/Library/assets/73823120/faee2d82-410a-4980-82ac-31e39074263f)
 
 ## Technology Used
