@@ -17,6 +17,7 @@ namespace TrackBot.Infrastructure.Context
         }
 
         public virtual DbSet<TrackLocation> TrackLocations { get; set; }
+        public virtual DbSet<UserLanguagePreference> UserLanguagePreferences { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -42,6 +43,18 @@ namespace TrackBot.Infrastructure.Context
                     .HasColumnType("decimal(12, 9)")
                     .HasColumnName("longitude");
                 entity.Property(e => e.TypeSource).HasDefaultValueSql("((1))");
+            });
+
+            modelBuilder.Entity<UserLanguagePreference>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+
+                entity.ToTable("UserLanguagePreference");
+
+                entity.Property(e => e.LanguageCode)
+                    .HasMaxLength(2)
+                    .IsUnicode(false)
+                    .HasColumnName("language_code");
             });
 
             OnModelCreatingPartial(modelBuilder);
