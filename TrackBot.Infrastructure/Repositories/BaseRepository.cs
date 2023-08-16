@@ -16,7 +16,7 @@ namespace TrackBot.Infrastructure.Repositories
             _entities = trackContext.Set<T>();
         }
 
-        public async Task<IEnumerable<T>> FindAll(
+        public async Task<IEnumerable<T>> GetAll(
             Func<T, bool> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null)
         {
