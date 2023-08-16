@@ -20,12 +20,14 @@ TrackBot is designed to track walking activities and perform calculations on the
 - Distance calculation: Calculating the distance covered for each walk.
 - Duration calculation: Calculating the duration of each walk.
 - Daily activity summary: Providing a summary of the total distance covered and total duration for each day.
+- Localization: Supporting localization in two languages (Ukrainian and English).
 - Telegram bot integration: Integrating with a Telegram bot to provide information and insights about walks based on user input.
 
 ## Screenshots
 
-![1](https://github.com/matviiv8/TrackBot/assets/73823120/133d6ff8-50f5-42c2-95ae-a9fa4f730fcc)
-![2](https://github.com/matviiv8/Library/assets/73823120/faee2d82-410a-4980-82ac-31e39074263f)
+![1](https://github.com/matviiv8/TrackBot/assets/73823120/26e81016-477c-4bb0-b6da-ef8a1cde018b)
+![2](https://github.com/matviiv8/TrackBot/assets/73823120/16572460-dbee-4125-9f92-44d9a5718454)
+![3](https://github.com/matviiv8/TrackBot/assets/73823120/99dcffe8-b02c-4c7d-8a16-9dee2ddbc7a2)
 
 ## Technology Used
 
