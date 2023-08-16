@@ -17,7 +17,7 @@ namespace TrackBot.Infrastructure.Implementations
 
         public async Task<List<Walk>> DivisionIntoWalksAsync(string imei)
         {
-            var trackLocations = await _trackLocationRepository.FindAll(trackLocation => trackLocation.Imei.Contains(imei));
+            var trackLocations = await _trackLocationRepository.GetAll(trackLocation => trackLocation.Imei.Contains(imei));
             var sortedTrackLocations = trackLocations.OrderBy(trackLocation => trackLocation.DateTrack).ToList();
             var walks = new List<Walk>();
             var walkId = 1;
